@@ -1,1 +1,106 @@
+@font-face {
+  src: url("./fonts/Shabnam.ttf");
+  font-family: Shabnam;
+}
 
+* {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Shabnam;
+  direction: rtl;
+  background: #4776e6;
+  background: -webkit-linear-gradient(
+    to right,
+    #8e54e9,
+    #4776e6
+  );
+  background: linear-gradient(
+    to right,
+    #8e54e9,
+    #4776e6
+  );
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wid100 {
+  width: 100%;
+}
+
+.fontwhite {
+  color: white;
+}
+
+.txtcenter {
+  text-align: center;
+}
+
+.header {
+  margin-top: 1%;
+  height: 20%;
+}
+
+.main {
+  margin: 1rem 0;
+  height: 50%;
+}
+
+.main img {
+  width: 50%;
+  height: 50%;
+}
+
+#main_pic{
+  width: 50%;
+  height: 50%;
+}
+
+.footer {
+  height: 20%;
+}
+
+.container-days{
+  flex-wrap: wrap;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid white;
+  margin:.5rem 0;
+}
+
+
+@media only screen and (max-width: 600px){
+  .header {
+    font-size:.6rem;
+  }
+
+  .main{
+    font-size:.9rem;
+  }
+
+  .container-days{
+    flex-wrap: wrap;
+  }
+
+  #footer_day{
+    font-size:.8rem;
+  }
+}
